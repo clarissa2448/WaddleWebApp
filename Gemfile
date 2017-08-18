@@ -2,7 +2,9 @@ source "http://rubygems.org"
 
 gem "sinatra-activerecord"
 gem "rake"
-gem "sqlite3"
+group :development, :test do # <<<< :development, not devlopment
+  gem 'sqlite3'
+end
 gem 'pry'
 gem 'sinatra'
 gem 'shotgun'
