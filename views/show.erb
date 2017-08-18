@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Show- after you have joined a waddle</title>
-  
+  <link rel="shortcut icon" href="img/penguin-logo.ico" length = 16px width = 16px>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
@@ -29,6 +29,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#results">Results</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#map">Map</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -57,15 +60,12 @@
         <br><br><br><br><br>
       </div>
     </section>
-    <!--<section id="contact" class="map">-->
-    <!--    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.337696264137!2d-83.49450568450307!3d42.463105979180135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824aebf4af15b47%3A0x9ac80826ca0787a5!2sNovi+High+School!5e0!3m2!1sen!2sus!4v1503064251587" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
-    <!--    <br />-->
-    <!--    <small>-->
-    <!--        <a href="https://www.google.com/maps/place/<%#@location.gsub(" ", "+")%>/">Click Here for Directions</a>-->
-            <!--<p><%#@location.gsub(" ", "+")%></p>-->
-            <!--<p>https://www.google.com/maps/place/<%#@location.gsub(" ", "+")%></p>-->
-    <!--    </small>-->
-    <!--</section>-->
+    <section id="map" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="//www.google.com/maps/embed/v1/place?q=<%=@location%>
+          &zoom=17
+          &key=AIzaSyAs801qFouVHZWCA7cbrHVv4fEg2EYfDnM">
+        </iframe>
+    </section>
     <section class="contact bg-primary" id="contact" style="background:#FF791D;">
       <div class="container">
         <h2>Contact</h2>
